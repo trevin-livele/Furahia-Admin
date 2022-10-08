@@ -1,1 +1,83 @@
-<p>base-layout works!</p>
+<mat-toolbar>
+    <button mat-icon-button *ngIf="sideNav.mode === 'over'" (click)="sideNav.toggle()">
+        <mat-icon *ngIf="!sideNav.opened"> menu </mat-icon>
+        <mat-icon *ngIf="sideNav.opened"> close </mat-icon>
+    </button>
+    <div class="logo">
+        <a a routerLink="/dashboard" class="simple-text logo-mini">
+            <div class="logo-img">
+                <img src="../../../assets/images/alladinlogo.jpeg" alt="" />
+            </div>
+        </a>
+        <a class="simple-text logo-normal"> DRINK ALLADIN ADMIN </a>
+    </div>
+    <div class="navigation">
+        <div></div>
+        <div>
+            <li class="name">
+    
+            </li>
+            <li class="email mb-1"></li>
+        </div>
+    </div>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav opened #sideNav="matSidenav" class="mat-elevation-z8">
+        <button mat-button class="menu-button" a routerLink="/dashboard" routerLinkActive="active">
+            <i class="fa-solid fa-home"></i>
+            <span>Dashboard</span>
+        </button>
+
+        <button mat-button class="menu-button" a routerLink="/users/users-list" routerLinkActive="active">
+            <i class="fa-solid fa-address-book"></i>
+            <span>Users</span>
+        </button>
+        <button mat-button class="menu-button" a routerLink="/business/products" routerLinkActive="active">
+            <i class="fa-brands fa-product-hunt"></i>
+            <span>Products</span>
+        </button>
+        <button mat-button class="menu-button" a routerLink="/business/categories" routerLinkActive="active">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>Categories</span>
+        </button>
+        <button mat-button class="menu-button" a routerLink="/users/roles" routerLinkActive="active">
+            <i class="fa-solid fa-lock"></i>
+            <span>Rbacs</span>
+        </button>
+        <button mat-button class="menu-button" a routerLink="/business/transactions" routerLinkActive="active">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <span>Transactions</span>
+        </button>
+        <button mat-button class="menu-button" a routerLink="/users/orders" routerLinkActive="active">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Orders</span>
+        </button>
+        <button mat-button class="menu-button" a routerLink="/business/promotions" routerLinkActive="active">
+            <i class="fa-solid fa-receipt"></i>
+            <span>Promotions</span>
+        </button>
+
+        <button mat-button class="menu-button" a routerLink="/users/location" routerLinkActive="active">
+            <i class="fa-solid fa-location-pin"></i>
+            <span>Locations</span>
+        </button>
+
+        <button mat-button class="menu-button" a routerLink="/business/adds" routerLinkActive="active">
+            <i class="fa-solid fa-rectangle-ad"></i>
+            <span>Adds</span>
+        </button>
+        <button mat-button class="menu-button" a routerLink="/datahub" routerLinkActive="active">
+            <i class="fa-solid fa-chart-bar"></i>
+            <span>Data hub</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-button class="menu-button">
+            <mat-icon>help</mat-icon>
+            <span>Help</span>
+        </button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
