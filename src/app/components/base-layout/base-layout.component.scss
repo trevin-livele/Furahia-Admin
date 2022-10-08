@@ -13,8 +13,8 @@ img {
 }
 
 mat-toolbar {
-    background: #F24E1E;
-    color: white;
+    background: #F7F7F7;
+    color: black;
     position:fixed;
     z-index: 100;
     display: flex;
@@ -29,8 +29,8 @@ mat-icon {
 mat-sidenav {
     width: 200px;
     border-right: none;
-    background: #F24E1E;
-    color: white;
+    background: #F0F0F0;
+    color: #858585;
     padding: 16px;
     text-align: center;
     position: fixed;
@@ -67,11 +67,14 @@ li mat-icon:hover {
 }
 .menu-button:hover,
 .menu-button:focus {
-    color: #105D97;
+    color: white;
     transition: all .3s ease 0s;
+    background-color: darkgreen;
+    border-radius: 0 50px 50px 0;
+
 }
 .active {
-    color: #105D97 !important;
+    color: green !important;
 }
 
 i {
@@ -97,11 +100,6 @@ i {
     color: lightgrey;
 }
 
-mat-divider {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
 
 .avatar{
     height: 40px;

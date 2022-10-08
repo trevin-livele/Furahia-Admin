@@ -29,10 +29,13 @@ import { RouterModule } from '@angular/router';
 import { BaseLayoutComponent } from '../components/base-layout/base-layout.component';
 import { MatListModule } from '@angular/material/list';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     BaseLayoutComponent,
+    
+
   ],
   imports: [
     CommonModule,
@@ -62,7 +65,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    FontAwesomeModule
   ],
   exports: [
     CommonModule,
@@ -92,6 +96,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatDividerModule,
     MatListModule,
     MatProgressBarModule,
+    FontAwesomeModule,
     // Components
     BaseLayoutComponent,
   ],
