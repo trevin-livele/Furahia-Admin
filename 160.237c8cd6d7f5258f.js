@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfurahia_admin=self.webpackChunkfurahia_admin||[]).push([[160],{9160:(l,o,n)=>{n.r(o),n.d(o,{TransactionModule:()=>s});var r=n(6895),u=n(4650);let s=(()=>{class a{}return a.\u0275fac=function(c){return new(c||a)},a.\u0275mod=u.oAB({type:a}),a.\u0275inj=u.cJS({imports:[r.ez]}),a})()}}]);
