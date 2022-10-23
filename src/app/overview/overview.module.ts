@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashOverviewComponent } from './dash-overview/dash-overview.component';
 import { SharedModule } from '../shared/shared.module';
 import { OverviewRoutingModule } from './overview-routing.module';
+import { DashOverviewComponent } from './dash-overview.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
 @NgModule({
   declarations: [
-    DashOverviewComponent
+    DashOverviewComponent,
+    DashboardComponent
   ],
   imports: [
     CommonModule,
